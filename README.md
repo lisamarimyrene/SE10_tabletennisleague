@@ -3,6 +3,8 @@
 ## Note!
 This is a cloned project from a previous exam I did in a group at NTNU. I am now using this project to implement testing and refactoring the files accordingly, for the SE 10 Automated Testing module assessment at Code University. 
 
+**Please read the README files in both the backend folder and frontend folder to get more detailed information about the application.**
+
 # Table Tennis League App - IDG2100 Exam Project
 Created by Lisa Mari Myrene, Anosh Chaudhry, & Alexandra Eloise Vanje
 
@@ -14,4 +16,3 @@ Table tennis has become a very popular activity on NTNU in recent years, with mo
 
 Table Tennis League App is a web application where you are able to create an account, play a match, and then save the match to the system. By developing this system, it allows all players to keep track of their rank and wins, as well as other players statistics. This web application contributes to keeping students motivated to continue playing in order to improve their scores and get to the top of the leaderboard. This application was designed for the students at NTNU Gjøvik, but it has the possibility to expand to the other universities.
 
-**Please read the README files in both the backend folder and frontend folder to get more detailed information about the application.**
