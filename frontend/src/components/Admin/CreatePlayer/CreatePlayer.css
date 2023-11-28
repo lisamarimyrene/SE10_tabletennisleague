@@ -1,0 +1,57 @@
+.addPlayer-container {
+    padding-bottom: 8vh;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    flex-direction: column;
+}
+
+.firstname-div, .lastname-div, .email-div, .username-div, .password-div, .institute-div, .submit-div{
+    padding: 0px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.label-addplayer {
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+.input-addplayer, #institute {
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 4px;
+    padding: 8px;
+    width: auto;
+    font-size: medium;
+  
+}
+
+.submit-div{
+    padding-top: 0px;
+    margin-bottom: 10px;
+}
+
+.submit-addplayer{
+    font-size: 1em;
+    background-color: #2B7288;
+    color: white;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: fit-content;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition:0.2s;
+}
+.submit-addplayer:hover {
+    background-color: #40A6C7;
+}
+

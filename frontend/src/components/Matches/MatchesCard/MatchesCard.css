@@ -1,0 +1,44 @@
+.matchescard-container {
+    background-color: #EAF4F6;
+    min-width: 19rem;
+    padding: 2vh 1vw 3vh;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: fit-content;
+}
+.matchescard-container h2 {
+    font-family: Impact;
+    border-bottom: solid 2px #FCEB82;
+    padding-bottom: 5px;
+    color: #2B7288;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-weight: 400;
+}
+span {
+    font-family: Impact;
+    color: #25677c;
+}
+.matchplayers-container {
+    line-height: 70%;
+    margin-bottom: 3vh;
+    background-color: #D9EDF1;
+    width: 90%;
+    border-radius: 12px;
+    padding: 5px 0;
+}
+
+
+@media only screen and (min-width: 900px) {
+    .matchescard-container { 
+        min-width: 19rem;
+    }
+}
+

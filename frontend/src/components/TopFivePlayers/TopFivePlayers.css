@@ -1,0 +1,60 @@
+.tableT {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 90vw;
+}
+.table-headerT {
+    background-color: #2B7288;
+    color: white;
+    margin: 0;
+    height: 6vh;
+    text-align: left;
+}
+.table-headerT > tr > th:first-child {
+    padding-left: 25px;
+    border-top-left-radius: 10px;
+}
+.headerPointsT {
+    border-top-right-radius: 10px;
+}
+.table-headerT > tr > th {
+    text-align: left;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+.headerInstituteT {
+    width: 30%;
+}
+.headerMatchesT {
+    width: 25%;
+}
+
+.table-bodyT {
+    background-color: white;
+    font-size: 0.8rem;
+}
+.table-rowT {
+    border-bottom: solid 2px #dce6ea;
+    height: 8vh;
+}
+.table-rowT > td:first-child {
+    padding-left: 25px;
+}
+
+
+@media only screen and (min-width: 700px) {
+    .tableT {
+        margin: 0 auto;
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 600px;
+    }
+    .table-headerT > tr > th {
+        font-weight: 400 !important;
+        font-size: medium !important;
+    }
+    .table-rowT td {
+        font-size:1.1em !important;
+    }
+
+}

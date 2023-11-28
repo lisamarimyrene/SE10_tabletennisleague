@@ -1,0 +1,94 @@
+.infomatch-container {
+    height: auto;
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.infomatch-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+.infomatch-stats {
+    height: auto;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.infomatch-stats > h4, .winner-container > h4 {
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.winner-container {
+    line-height: 100%;
+    padding-bottom: 7px;
+}
+
+.infomatch-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2vh 0;
+}
+
+.matchesEditBtn, .matchesDeleteBtn, .matchesStatsBtn {
+    font-size: 1em;
+    padding: 8px 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    min-width: 18vw;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    color: #454545;
+    margin:4px;
+    transition:0.2s;
+}
+
+.matchesEditBtn {
+    background-color:#7DC7D9;
+}
+
+.matchesEditBtn:hover {
+    background-color:#2B7288;
+    color: white;
+}
+
+
+.matchesDeleteBtn {
+    background-color: #F56584;
+    color: #2B2B2B;
+}
+
+.matchesDeleteBtn:hover {
+    background-color: #D73E5E;
+    color: white;
+}
+
+.matchesStatsBtn {
+    background-color:#FCEB82;
+    color: #2B2B2B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.matchesStatsBtn:hover {
+    background-color:#F8DF00;
+}
+
+@media only screen and (min-width: 850px) {
+    
+    .matchesEditBtn, .matchesDeleteBtn, .matchesStatsBtn  {
+        min-width: 6vw;
+        margin: 8px;
+    }
+
+}

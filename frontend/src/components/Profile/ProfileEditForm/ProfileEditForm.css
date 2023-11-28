@@ -1,0 +1,82 @@
+.form-profile {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 2vh;
+}
+.label-profile {
+    color: gray;
+    font-weight: 400;
+    margin-bottom: 0px;
+    font-size: large;
+    margin-bottom: 15px;
+}
+
+.input-profile {
+    margin-bottom: 20px;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 4px;
+    padding: 8px;
+    width: auto;
+    font-size: medium;
+
+}
+.button-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.submit-profile {
+    margin: 1vh 1vw 1vh 0;
+    font-size: 1em;
+    background-color: #40A6C7;
+    color: white;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: fit-content;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+.submit-profile:hover {
+    background-color: #2B7288;
+}
+.cancelBtn-profile {
+    margin: 1vh 0;
+    font-size: 1em;
+    background-color: #F56584;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: fit-content;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+.cancelBtn-profile > a {
+    color: white;
+}
+.cancelBtn-profile > a:hover {
+    color: white;
+}
+
+.cancelBtn-profile:hover {
+    background-color: #D73E5E;
+    color: white;
+}
+
+.errorMsg {
+    display: none;
+}
+
+@media only screen and (min-width: 570px) {
+    form > label {
+        font-size: large;
+    }
+}
