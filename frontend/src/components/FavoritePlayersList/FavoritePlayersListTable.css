@@ -1,0 +1,105 @@
+.table-scrollF {
+    overflow: scroll;
+    height: 70vh;
+    max-width: 90vw;
+    margin: 8vh 0;
+    background-color: white;
+}
+.tableF {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 180vw;
+}
+.table-headerF {
+    background-color: #2B7288;
+    color: white;
+    margin: 0;
+    height: 6vh;
+}
+.table-headerF > tr > th:first-child {
+    padding-left: 25px;
+    border-top-left-radius: 10px;
+}
+.headerFavoriteF{
+    border-top-right-radius: 10px;
+}
+.table-headerF > tr > th {
+    text-align: left;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+.headerNamesF {
+    width: 25%;
+}
+.headerInstituteF, .headerMatchesF {
+    width: 20%;
+}
+.headerMatchesF {
+    width: 15%;
+}
+.headerPointsF, .headerFavoriteF {
+    width: 12%;
+}
+.table-bodyF {
+    background-color: white;
+    font-size: 0.8rem;
+}
+.table-rowF {
+    border-bottom: solid 2px #dce6ea;
+    height: 8vh;
+}
+
+.table-rowF > td:first-child {
+    padding-left: 25px;
+}
+.remove-favorite-button{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.noPlayersYet {
+    font-size: 0.8rem;
+    text-align: left;
+    padding: 3vh;
+}
+.remove-favorite-button > p{
+    padding: 4px 0 0 0;
+    margin: 0;
+    color: rgb(99, 99, 99);
+    text-align: left;
+}
+
+
+@media only screen and (min-width: 500px) {
+    .table-scrollF {
+        width: 900px;
+    }
+    .tableF{
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 900px;
+    }
+
+
+  
+
+    .table-headerF > tr > th {
+        font-weight: 400;
+        font-size: medium;
+
+    }
+  
+  
+    .table-headerF th{
+      font-size: large;
+  }
+
+    .table-bodyF td{
+        font-size: 1.1em;
+    }
+    .noPlayersYet {
+        font-size: 1rem;
+        text-align: center;
+        padding-top: 5vh;
+    }
+}

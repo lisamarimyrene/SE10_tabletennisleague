@@ -1,0 +1,76 @@
+.editplayer-container {
+    padding-bottom: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    flex-direction: column;
+}
+.firstname-div, .lastname-div, .username-div, .password-div, .institute-div, .submit-div{
+    padding: 0px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.label-editplayer {
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+.input-editplayer {
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 4px;
+    padding: 8px;
+    width: 225px;
+    font-size: medium;
+   
+}
+
+.editplayer-submit-div{
+    padding-top: 0px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.editplayer-submit, .editplayer-cancelBtn{
+    font-size: 1em;
+    color: white;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: fit-content;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition:0.2s;
+    margin-right: 1.5vw;
+}
+.editplayer-submit {
+    background-color: #2B7288;
+}
+.editplayer-submit:hover {
+    background-color: #40A6C7;
+}
+
+.editplayer-cancelBtn {
+    background-color: #F56584;
+}
+.editplayer-cancelBtn:hover {
+    background-color: #D73E5E;
+}
+
+@media only screen and (min-width: 500px) {
+    
+    .input-editplayer, #institute {
+        border: 1px solid rgb(209, 209, 209);
+        border-radius: 4px;
+        padding: 8px;
+        width: auto;
+        font-size: medium;
+       
+    }
+
+}

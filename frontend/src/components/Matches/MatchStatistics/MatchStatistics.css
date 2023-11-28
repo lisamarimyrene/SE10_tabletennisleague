@@ -1,0 +1,103 @@
+.matchstats-container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+.matchstats-container h1 {
+    margin-top: 7vh;
+    border-bottom: solid 2px #FCEB82;
+    padding-bottom: 1vh;
+    margin-bottom: 10vh;
+}
+.matchstats-container > section {
+    width: 90vw;
+}
+.matchstats-players {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.matchstats-players > h2 {
+    background-color: #2B7288;
+    color: white;
+    font-size: 1.7rem;
+    height: 7vh;
+    width: 40%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.matchstats-players > h2:first-of-type {
+    border-top-left-radius: 15px;
+}
+.matchstats-players > h2:last-of-type{
+    border-top-right-radius: 15px;
+
+}
+.matchstats-players > h3 {
+    background-color: #D9EDF1;
+    color: #2B7288;
+    font-weight: 500;
+    font-size: 1.7rem;
+    height: 7vh;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0
+}
+.matchstats-info {
+    background-color: #D9EDF1;
+    padding: 30px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.matchstats-info > p {
+    margin: 0;
+    font-size: 1.1rem;
+    padding: 3vh 0;
+    padding-left: 2vw;
+}
+.returnToMatchesBtn {
+    margin: 5vh 1vw 2vh 0;
+    font-size: 1.1em;
+    background-color: #2B7288; 
+    color: white;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: fit-content;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+.returnToMatchesBtn:hover {
+    background-color:#40A6C7;
+}
+
+@media only screen and (min-width: 650px) {
+    .matchstats-container > section {
+        width: 45vw;
+    }
+    .matchstats-players > h2 {
+        font-size: 1.9rem;
+        height: 8vh;
+        width: 40%;
+    }
+    .matchstats-players > h3 {
+        font-size: 1.9rem;
+        height: 8vh;
+        width: 30%;
+    }
+    .matchstats-info > p {
+        font-size: 1.1rem;
+    }
+}

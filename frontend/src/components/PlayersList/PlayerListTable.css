@@ -1,0 +1,95 @@
+.table-scroll {
+    overflow: scroll;
+    max-height: 50vh;
+    max-width: 90vw;
+    margin: 8vh 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 180vw;
+}
+.table-header {
+    background-color: #2B7288;
+    color: white;
+    margin: 0;
+    height: 6vh;
+}
+.table-header > tr > th:first-child {
+    padding-left: 25px;
+    border-top-left-radius: 10px;
+}
+.headerEditDel {
+    border-top-right-radius: 10px;
+}
+.table-header > tr > th {
+    text-align: left;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+.headerNames {
+    width: 25%;
+}
+.headerInstitute, .headerMatches {
+    width: 20%;
+}
+.headerMatches {
+    width: 15%;
+}
+.headerPoints, .headerFavorite, .headerEditDel {
+    width: 12%;
+}
+.headerEditDel {
+    margin-right: 5px;
+}
+.table-body {
+    background-color: white;
+    font-size: 0.8rem;
+}
+.table-row {
+    border-bottom: solid 2px #dce6ea;
+    height: 8vh;
+}
+.dataEditDel > button > p {
+    font-size: 0.8rem;
+}
+.table-row > td:first-child {
+    padding-left: 25px;
+}
+.player-edit-button, .player-delete-button, .add-favorite-button{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.player-edit-button {
+    margin-right: 15px;
+}
+.player-edit-button > p, .player-delete-button > p, .add-favorite-button > p{
+    padding: 4px 0 0 0;
+    margin: 0;
+    color: rgb(99, 99, 99);
+    text-align: left;
+}
+
+@media only screen and (min-width: 900px) {
+    .table-scroll {
+        width: 900px;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 885px;
+    }
+    .table-header > tr > th {
+        font-weight: 400;
+        font-size: medium;
+    }
+
+    .tableT th {
+        font-size:2em;
+    }
+
+    .table-body td {
+        font-size:1.1em;
+    }
+}

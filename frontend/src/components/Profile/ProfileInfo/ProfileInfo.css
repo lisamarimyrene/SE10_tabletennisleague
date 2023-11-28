@@ -1,0 +1,10 @@
+.box2-div-parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.box2-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

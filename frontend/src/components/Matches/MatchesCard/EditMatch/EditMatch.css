@@ -1,0 +1,68 @@
+.form-editmatch {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vh;
+    text-align: center;
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+.input-player1-container, .input-player2-container {
+    margin-bottom: 3vh;
+}
+.label-editmatch {
+    font-size: large;
+}
+.input-editmatch {
+    margin-top: 1vh;
+    border: none;
+    text-align: center;
+    border-radius: 4px;
+    padding: 6px 0;
+    width: fit-content;
+    font-size: medium;
+}
+.editmatch-button-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3vh 0;
+}
+
+.submit-editmatch, .cancel-editmatch {
+    font-size: 1em;
+    padding: 8px 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    min-width: 12vw;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition:0.2s;
+}
+
+.submit-editmatch {
+    background-color:#40A6C7;
+}
+
+.submit-editmatch:hover {
+    background-color:#2B7288;
+}
+
+.cancel-editmatch {
+    background-color: #F56584;
+}
+
+.cancel-editmatch:hover {
+    background-color: #D73E5E;
+}
+
+@media only screen and (min-width: 500px) {    
+    .submit-editmatch, .cancel-editmatch {
+        min-width: 7vw;
+    }
+
+}
