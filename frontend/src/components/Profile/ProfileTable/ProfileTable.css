@@ -1,0 +1,106 @@
+.profiletable-container {
+    width: 100vw;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-info {
+    background-color: white;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 10px;
+    margin-bottom: 5vh;
+    line-height: 110%;
+    padding: 3vh 4vh;
+    width: 70vw;
+}
+
+.profile-info h2 {
+    font-weight: 400;
+    font-size: large;
+}
+.box1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.box1-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FDE9ED;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 25px;
+}
+.box1-image p {
+    font-size: 2.5rem;
+    opacity: 85%;
+}
+.box1-text p {
+    font-size: medium;
+    color: #757575;
+    font-weight: 400;
+}
+.profile-table {
+    margin-top: 2vh;
+}
+
+.box2-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.editBtn {
+    padding: 5px 8px;
+    border: none;
+    background-color:white;
+}
+.editBtn:hover {
+    background-color: azure;
+    cursor: pointer;
+}
+.editBtn > p{
+    padding: 2px 0 0 0;
+    margin: 0;
+    color: rgb(99, 99, 99);
+    text-align: left;
+}
+
+.profile-info h3 { 
+    color: #757575;
+    font-weight: 400;
+    margin-bottom: 0px;
+    font-size: medium;
+}
+.box2 h2, .box3 h2 { 
+    padding-bottom: 10px;
+}
+
+.box3-div {
+ display: flex;
+ justify-content: space-between;
+}
+
+
+@media only screen and (min-width: 570px) {
+    .profile-info {
+        max-width: 330px;
+    }
+    .box1-image {
+        width: 100px;
+        height: 100px;
+    }
+    .box1-image p {
+        font-size: 3rem;
+    }
+    .profile-info h3 { 
+        font-size: large;
+    }
+
+}

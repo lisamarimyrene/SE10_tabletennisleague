@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+.newUserForm-container {
+    padding-bottom: 8vh;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    flex-direction: column;
+}
+
+.firstname-div, .lastname-div, .email-div, .username-div, .password-div, .institute-div, .submit-div{
+    padding: 0px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.label-newuser {
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+.input-newuser, #institute {
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 4px;
+    padding: 8px;
+    width: auto;
+    font-size: medium;
+}
+
+.submit-div{
+    padding-top: 0px;
+    margin-bottom: 10px;
+}
+
+
+.submit-newuser{
+    font-size: 1em;
+    background-color: #2B7288;
+    color: white;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: fit-content;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition:0.2s;
+}
+.submit-newuser:hover {
+    background-color: #40A6C7;
+}
+
+.subtitle-div{
+    align-items: center;
+    display: flex;
+    justify-content: left;
+}
+
+.subtitle{
+    font-size: 16px;
+    color: #2B7288;
+    text-decoration: underline;
+    padding-top: 10px;
+}
+
+.error-message {
+    color:black !important;
+}
+
+.error-message > p {
+    color:black;
+}
+
+@media only screen and (min-width: 360px) {
+    .firstname-div, .lastname-div, .email-div, .username-div, .password-div, .institute-div, .submit-div{
+        max-width: 15em;
+    }
+}

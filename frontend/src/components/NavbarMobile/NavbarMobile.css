@@ -1,0 +1,94 @@
+.navMobile-container {
+    background-color: #2B7288;
+    width: 100%;
+}
+.navMobile-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logoMobile {
+    font-family: 'Impact', sans-serif;
+    font-size: 1.2rem;
+    max-width: 12ch;
+    line-height: 130%;
+    color: white;
+    padding: 30px;
+    text-align: left;
+}
+.navMobile-header button {
+    margin: 30px;
+    background-color: #2B7288;
+    border: none;
+}
+.ul-containerMobile {
+    height: 100vh;
+    font-size: larger;
+    margin-top: 5vh;
+    display: none; 
+}
+.ul-containerMobile-expanded {
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+    margin-top: 5vh;
+    transition: background-color 0.2s ease-in-out;
+    text-align: center;
+}
+
+.ul-containerMobile-expanded ul {
+    list-style-type: none;
+    margin-right: 40px;
+}
+.ul-containerMobile-expanded li {
+    margin-bottom: 2.5rem;
+}
+.ul-containerMobile-expanded a {
+    color: white;
+    padding-bottom: 5px;
+}
+.activeM {
+    border-bottom: solid 2px #FCEB82;
+}
+
+.hamburger:hover {
+    cursor:pointer;
+
+transition:0.2s;
+}
+
+.hamburger:hover svg path {
+    fill:#FCEB82;
+}
+
+
+
+.navMobile-container a {
+    display: block;
+    position: relative;
+    width:24%;
+    margin: 0 auto;
+}
+
+/* Fade in */
+.navMobile-container a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #FCEB82;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+    
+  }
+  
+  .navMobile-container a:hover::after
+  {
+    opacity: 1;
+    transform: translate3d(0, 2px, 0);
+    
+  }
+  

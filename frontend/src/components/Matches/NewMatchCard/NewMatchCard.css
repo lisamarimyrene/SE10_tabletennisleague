@@ -1,0 +1,90 @@
+.newMatchCard-container {
+    background-color: #EAF4F6;
+    min-width: 17rem;
+    padding: 2vh 1vw 3vh;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: fit-content;
+}
+.newMatchCard-container h2 {
+    margin-bottom: 30px;
+}
+
+.newMatchPlayers-container{
+    line-height: 70%;
+    background-color: #D9EDF1;
+    width: 90%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh 0;
+  
+}
+
+.newMatchPlayers-container h3 {
+    font-size: medium;
+    background-color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+
+}
+.newMatchPlayers-container span {
+    font-family: Impact, sans-serif;
+    color: #2B7288;
+    margin: 1vh 0 3vh 0;
+}
+.newMatchPlayers-container select { 
+    background-color: white;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 3vh;
+    font-weight: 200;
+    font-size: medium;
+    text-align: center;
+}
+
+.startMatchBtn {
+    margin: 2vh 1vw 2vh 0;
+    font-size: 1em;
+    background-color: #2B7288;
+    color: white;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: fit-content;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+.startMatchBtn:hover {
+        background-color: #40A6C7;
+}
+
+
+@media only screen and (min-width: 900px) {
+    .newMatchCard-container { 
+        min-width: 22rem;
+    }
+    .newMatchPlayers-container h3 {
+        font-size: large;
+        width: 16vw;
+        padding: 12px 3px;
+    }
+
+    .newMatchPlayers-container select { 
+        font-size: large;
+        width: 16vw;
+        padding: 8px 0;
+    }
+}
+
