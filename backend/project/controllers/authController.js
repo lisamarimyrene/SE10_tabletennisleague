@@ -7,6 +7,7 @@ const nodemailer = require("nodemailer");
 
 // Soruce: https://www.bezkoder.com/node-js-mongodb-auth-jwt/
 // * Login controller
+//todo Test
 const Login = async (req, res) => {
     try {
         // Get email and password from the client
@@ -145,7 +146,6 @@ const Refresh = async (req, res) => {
 const Logout = async (req, res) => {
     try {
         if (req.cookies?.refreshToken) {
-            console.log("yehehey");
             const refreshToken = req.cookies.refreshToken;
 
             // Delete old existing refresh tokens
@@ -163,6 +163,7 @@ const Logout = async (req, res) => {
 
 
 // * Create a new player controller
+//todo Test
 const createPlayer = async (req, res) => {
     // Hash password
     const salt = await bcrypt.genSalt(10); // Generate random salt string with 10 ch

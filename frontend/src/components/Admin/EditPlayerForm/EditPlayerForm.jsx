@@ -45,6 +45,7 @@ export default function EditPlayerForm() {
 
     // Patch request to the players api endpoint, update a player
     async function UpdateChanges(data) {
+        //? Test?
         // Construct the updatedData object
         const updatedData = {
             firstname: data.firstname || "",

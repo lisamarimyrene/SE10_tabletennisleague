@@ -13,6 +13,7 @@ export default function CreatePlayer({ onSubmit }) {
     } = useForm();
 
 
+    //? Test?
     // Post request to the players api endpoint
     function RegisterPlayer(data) {
         axios

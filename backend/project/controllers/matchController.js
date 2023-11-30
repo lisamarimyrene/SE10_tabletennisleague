@@ -4,6 +4,7 @@ const playersSchema = require('../schemas/playersSchema')
 
 
 // * Find all matches
+//todo Test
 const getAllMatches = async (req, res) => {
     try {
         const showMatches = await matchSchema.find()
@@ -23,6 +24,7 @@ const getAllMatches = async (req, res) => {
 
 
 // * Find all matches - length
+//todo Test
 const matchesLength = async (req, res) => {
     try {
         const showMatches = await matchSchema.find();

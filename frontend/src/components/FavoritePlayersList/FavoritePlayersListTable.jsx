@@ -31,6 +31,7 @@ export default function FavoritePlayerListTable() {
             .catch((error) => console.log(error));
     }, [loggedIn]);
 
+    //? Test?
     // Remove favorite player functionality
     const handleRemoveFavorite = (removePlayerId) => {
         // Confirm message if you want to remove player 

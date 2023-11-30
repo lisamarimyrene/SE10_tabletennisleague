@@ -10,6 +10,7 @@ const TechnologyProvider = ({ children }) => {
     const [accessToken, setAccessToken] = useState(null); // Initialize the access token to null
     const [userRole, setUserRole] = useState(null);
 
+    //? Test?
     // Get accessToken (post)
     function getAccessToken() {
         // Initialize credentials

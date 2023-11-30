@@ -13,6 +13,7 @@ const corsAccess = {
 
 // Set up express, cors, and cookie for the app
 const app = express();
+module.exports = app;
 app.use(cors(corsAccess));
 app.use(cookieParser());
 
@@ -33,12 +34,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Routes
-app.use("/api/players", require("./routes/playersRoutes"));
-app.use("/api/matches", require("./routes/matchRoutes"));
-app.use("/api/auth", require("./routes/authRoutes"));
-app.use("/api/public", require("./routes/publicRoutes"));
+app.use("/api/players", require("../routes/playersRoutes"));
+app.use("/api/matches", require("../routes/matchRoutes"));
+app.use("/api/auth", require("../routes/authRoutes"));
+app.use("/api/public", require("../routes/publicRoutes"));
 app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
-app.use("/", require("./confirmationMail"));
+app.post("/confEmail", require("./confirmationMail"));
 
 // app.listen on port
 app.listen(PORT, () =>

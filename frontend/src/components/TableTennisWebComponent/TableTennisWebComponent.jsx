@@ -30,6 +30,7 @@ export default function TableTennisWebComponent({ handleFinishMatch }) {
         setStartTime(new Date())
     }, [])
 
+    //? Test?
     // Calculate duration
     const getDuration = (start, end) => {
         const duration = end - start

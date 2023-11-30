@@ -4,6 +4,7 @@ const bcrypt = require("bcryptjs");
 
 
 // * Find all players
+//todo Test
 const getAllPlayers = async (req, res) => {
     try {
         const showPlayers = await playersSchema.find();
@@ -15,6 +16,7 @@ const getAllPlayers = async (req, res) => {
 };
 
 // * Find all players - length
+//todo Test
 const playersLength = async (req, res) => {
     try {
         const showPlayers = await playersSchema.find();
@@ -26,6 +28,7 @@ const playersLength = async (req, res) => {
 };
 
 // * Find one player
+//todo Test
 const getOnePlayer = async (req, res) => {
     try {
         const showPlayer = await playersSchema.find({ _id: req.params.id });

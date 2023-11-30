@@ -4,6 +4,7 @@ import axios from "axios";
 import { TechnologyContext } from "../../providers/TechnologyProvider";
 import { useNavigate } from "react-router-dom"; // Import the useNavigate hook
 import jwt_decode from "jwt-decode";
+import { isFavorite } from "../../utils/favoritePlayers";
 
 // * PlayerListTable component
 export default function PlayerListTable() {
@@ -96,13 +97,6 @@ export default function PlayerListTable() {
         fetchFavoritePlayers()
     }, [loggedIn])
 
-    // isFavorite functionality
-    const isFavorite = (player) => {
-        return (
-            favoritePlayers &&
-            favoritePlayers.some((favoritePlayer) => favoritePlayer._id === player._id)
-        );
-    };
 
     // * Handle delete player functionality
     const handleDeleteBtn = (index) => {

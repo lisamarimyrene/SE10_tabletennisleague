@@ -4,8 +4,8 @@
   "description": "The backend project goes in this folder",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon ./project/server.js",
+    "test": "jest",
+    "server": "nodemon ./project/utils/server.js",
     "backend": "node setupBackend.js"
   },
   "keywords": [],
@@ -24,5 +24,9 @@
     "nodemon": "^2.0.22",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^4.6.3"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
   }
 }

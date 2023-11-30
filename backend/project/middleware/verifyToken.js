@@ -1,7 +1,10 @@
+// middlware er funksjoner som kjører mellom request og respons ;-) 
+
 const jwt = require("jsonwebtoken");
 const dotenv = require("dotenv").config();
 
 // * Check if user is autentificated
+//todo Test
 const auth = (req, res, next) => {
     const token = req.header("authToken");
     // If user doesnt have token, deny access
@@ -24,6 +27,7 @@ const auth = (req, res, next) => {
 };
 
 // * Check if user is logged in as admin
+//todo Test
 const admin = (req, res, next) => {
     const token = req.header("authToken");
     // If user doesn't have token, deny access
