@@ -11,7 +11,6 @@ export default function TopFivePlayers() {
         axios.get('http://localhost:5005/api/public/getTopPlayers')
             .then(res => {
                 setTopPlayers(res.data);
-                // setTopPlayers5(res.data);
             })
             .catch(error => console.log(error))
     }, [TopFivePlayers])

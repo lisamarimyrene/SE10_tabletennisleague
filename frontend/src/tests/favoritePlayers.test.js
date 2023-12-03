@@ -7,7 +7,7 @@ const favoritePlayers = [
     { _id: '3', name: 'Player 3' },
 ];
 
-// Test cases for the isFavorite function
+// * Unit test
 describe('isFavorite function', () => {
     test('should return true if player is in favoritePlayers', () => {
         const playerInFavorites = { _id: '1', name: 'Player 1' };
