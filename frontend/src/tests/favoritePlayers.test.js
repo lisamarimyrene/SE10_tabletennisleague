@@ -11,11 +11,11 @@ const favoritePlayers = [
 describe('isFavorite function', () => {
     test('should return true if player is in favoritePlayers', () => {
         const playerInFavorites = { _id: '1', name: 'Player 1' };
-        expect(isFavorite(playerInFavorites)).toBe(true);
+        expect(isFavorite(favoritePlayers, playerInFavorites)).toBe(true);
     });
 
     test('should return false if player is not in favoritePlayers', () => {
         const playerNotInFavorites = { _id: '4', name: 'Player 4' };
-        expect(isFavorite(playerNotInFavorites)).toBe(false);
+        expect(isFavorite(favoritePlayers, playerNotInFavorites)).toBe(false);
     });
 });
