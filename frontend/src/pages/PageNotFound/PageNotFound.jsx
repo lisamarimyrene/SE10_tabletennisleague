@@ -5,14 +5,13 @@ import { useNavigate } from "react-router-dom";
 export default function PageNotFound() {
     const navigate = useNavigate();
 
-    //? Test?
     const handleNavigate = () => {
         navigate("/")
     }
 
     return (
         <div className="pageNotFound-container">
-            <h1>404 Page Not found!</h1>
+            <h1 data-testid="notfound-text">404 Page Not found!</h1>
             <button onClick={handleNavigate}>Go to Homepage</button>
         </div>
     );
